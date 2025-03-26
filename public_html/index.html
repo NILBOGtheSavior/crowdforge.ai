@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>crowdforge.ai</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/dev.css">
+        <script type="importmap">
+            {
+              "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.174.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.174.0/examples/jsm/"
+              }
+            }
+          </script>
+          <script type="module" src="js/script.js"></script>
+          <script type="module" src="js/hero.js"></script>
+          <script type="module" src="js/dev.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <h1>crowdforge.ai</h1>
+                <ul id="pages">
+                    <li><a href="index.html">Home</a></li>
+                    <li>About</li>
+                </ul>
+                <button id="dev" class="toggleDev">
+                    <span>dev tools</span>
+                </button>
+                <ul id="account">
+                    <li>Log In</li>
+                    <!-- <li>Sign Up</li> -->
+                </ul>
+            </nav>
+        </header>
+        <span id="hero">
+            <div id="container">
+                <h1>Shape the Future of Data</h1>
+                <p>
+                    Welcome to a new era of human-AI collaboration. We're building an ecosystem where individuals can directly influence the development of AI systems, ensuring that these powerful tools reflect the richness and complexity of human experience. Join us in shaping the future of intelligence, one contribution at a time.
+                </p>
+                <h2>Sign up here to recieve updates:</h2>
+                <form action="">
+                    <input type="email" name="" id=""><button><b>Submit</b></button>
+                </form>
+            </div>
+            <div id="three"></div>
+        </span>
+        <main>
+            <section>
+                <h2>Enhancing AI with Diverse Data</h2>
+                <p>Our platform enhances AI by increasing data diversity through community-driven contributions by sourcing data from a wide range of voluntary participants, ensuring that AI models are trained on varied, representative datasets.</p>
+            </section>
+            <section>
+                <div>
+                    <p>
+                        
+                    </p>
+                    <img src="img/data.png" alt="">
+                </div>
+                <hr>
+                <div>
+                    <img src="img/privacy.png" alt="">
+                    <p>
+                        We prioritize privacy and ethical data collection by encouraging voluntary participation and transparent methods, unlike traditional AI training that often relies on scraped or undisclosed data.
+                    </p>
+                </div>
+                <hr>
+                <div>
+                    <p>To safeguard AI models, we use an AI-driven ranking system to evaluate each contributor's purity score—a measure of their trustworthiness.</p>
+                    <img src="img/poison.png" alt="">
+                </div>
+            </section>
+        </main>
+        <aside id="developerTools">
+            <button class="toggleDev">close</button>
+            <div class="controls">
+                <div>
+                    <label>
+                        X: <input type="range" id="xSlider" min="-2" max="2" step="0.01" value="0">
+                        <input type="number" id="xValue" min="-2" max="2" step="0.01" value="0" class="posLabel">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Y: <input type="range" id="ySlider" min="-2" max="2" step="0.01" value="0">
+                        <input type="number" id="yValue" min="-2" max="2" step="0.01" value="0" class="posLabel">
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Z: <input type="range" id="zSlider" min="-2" max="2" step="0.01" value="0">
+                        <input type="number" id="zValue" min="-2" max="2" step="0.01" value="0" class="posLabel">
+                    </label>
+                </div>
+            </div>
+        </aside>
+    </body>
+    <footer>
+        <p>&copy; 2025 crowdforge.ai</p>
+    </footer>
+</html>
